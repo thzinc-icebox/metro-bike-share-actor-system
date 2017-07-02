@@ -63,7 +63,7 @@ namespace bikeshare
             switch (context.Message)
             {
                 case Run _:
-                    scheduler.ScheduleTellOnce(TimeSpan.FromSeconds(5), context.Self, new Refresh());
+                    scheduler.ScheduleTellOnce(TimeSpan.FromSeconds(30), context.Self, new Refresh());
                     break;
                 case Refresh _:
                     _behavior.Become(Refreshing);
