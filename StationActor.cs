@@ -17,7 +17,7 @@ namespace bikeshare
                         if (diff != 0)
                         {
                             var verb = diff > 0 ? "gained" : "lost";
-                            Console.WriteLine($"{_station.Properties.Name} {verb} {Math.Abs(diff)} bikes");
+                            Console.WriteLine($"{DateTimeOffset.Now}: {_station.Properties.Name} {verb} {Math.Abs(diff)} bikes");
                         }
                     }
 
